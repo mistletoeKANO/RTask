@@ -27,25 +27,25 @@ private RTask<int> TestRTaskInt32()
 private async void TestRTask()
 {
     //milliseconds, use unscaledDealtTime
-    await RTask.RTask.Delay(1000, true);
+    await RTask.Delay(1000, true);
 
-    await RTask.RTask.DelayFrame(10);
+    await RTask.DelayFrame(10);
 
-    await RTask.RTask.NextFrame();
+    await RTask.NextFrame();
 
-    await RTask.RTask.EndOfFrame();
+    await RTask.EndOfFrame();
 
-    await RTask.RTask.DelayFrame(0);
+    await RTask.DelayFrame(0);
 }
 
 private void TestAction()
 {
-    RTask.RTask.DelayFrameAction(111, () =>
+    RTask.DelayFrameAction(111, () =>
     {
         Debug.Log("DelayFrameAction");
     });
     //milliseconds
-    RTask.RTask.DelayAction(2000, () =>
+    RTask.DelayAction(2000, () =>
     {
         Debug.Log("DelayAction");
     });

@@ -10,6 +10,20 @@
 ## Simple Example
 
 ```csharp
+    
+private async void TestRTaskInt()
+{
+    var res = await TestRTaskInt32();
+    Debug.Log(res); // log: 111
+}
+
+private RTask<int> TestRTaskInt32()
+{
+    RTask<int> rTask = RTask<int>.Create();
+    rTask.SetResult(111);
+    return rTask;
+}
+    
 private async void TestRTask()
 {
     //milliseconds, use unscaledDealtTime

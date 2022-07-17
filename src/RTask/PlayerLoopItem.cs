@@ -153,7 +153,7 @@ namespace RTask
         {
             if (this.elapsed < this.duration)
             {
-                float addTime = this.unscaledTime ? Time.unscaledDeltaTime * 1000 : Time.deltaTime * 1000;
+                float addTime = this.unscaledTime ? UnityEngine.Time.unscaledDeltaTime * 1000 : Time.deltaTime * 1000;
                 this.elapsed += addTime;
             }
             if (this.elapsed >= this.duration) this.isDone = true;

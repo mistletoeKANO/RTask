@@ -23,7 +23,7 @@ namespace RTask
     {
         public static Action<Exception> ExceptionHandler;
         private static RTask completedTask;
-        public static RTask CompletedTask => completedTask ??= new RTask {state = AwaitState.Succeeded};
+        public static RTask CompletedTask => completedTask ?? (completedTask = new RTask {state = AwaitState.Succeeded});
 
         private static readonly Queue<RTask> queue = new Queue<RTask>();
 

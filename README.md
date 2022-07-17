@@ -1,2 +1,2 @@
 # RTask
-Provides an efficient mainThread allocation free async/await integration for Unity.
+An simple efficient mainThread allocation free async/await integration for Unity.

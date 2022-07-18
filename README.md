@@ -7,7 +7,7 @@
 
 2. Makes all Unity AsyncOperations and Coroutines awaitable.
 
-3. PlayerLoop based task(RTask.Delay, RTask.DelayFrame, RTask.DelayAction etc..) that enable replacing all coroutine operations.
+3. PlayerLoop based task(RTask.Delay, RTask.DelayFrame, RTask.DelayAction etc..)
 
 ## Simple Example
 

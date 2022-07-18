@@ -3,11 +3,9 @@
 
 ## A simple efficient mainThread allocation free async/await integration for Unity.
 
-1. Struct based RTask<T> and custom AsyncMethodBuilder to achieve zero allocation.
+1. Custom AsyncMethodBuilder to achieve zero allocation.
 
-2. Makes all Unity AsyncOperations and Coroutines awaitable.
-
-3. PlayerLoop based task(RTask.Delay, RTask.DelayFrame, RTask.DelayAction etc..)
+2. PlayerLoop based task(RTask.Delay, RTask.DelayFrame, RTask.DelayAction etc..)
 
 ## Simple Example
 

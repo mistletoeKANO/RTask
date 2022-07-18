@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace RTask
 {
-    [AsyncMethodBuilder(typeof (AsyncETVoidMethodBuilder))]
+    [AsyncMethodBuilder(typeof (RAsyncVoidMethodBuilder))]
     internal struct RVoid: ICriticalNotifyCompletion
     {
         [DebuggerHidden]

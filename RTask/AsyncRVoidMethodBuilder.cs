@@ -5,13 +5,13 @@ using System.Security;
 
 namespace RTask
 {
-    internal struct AsyncETVoidMethodBuilder
+    internal struct RAsyncVoidMethodBuilder
     {
         // 1. Static Create method.
         [DebuggerHidden]
-        public static AsyncETVoidMethodBuilder Create()
+        public static RAsyncVoidMethodBuilder Create()
         {
-            AsyncETVoidMethodBuilder builder = new AsyncETVoidMethodBuilder();
+            RAsyncVoidMethodBuilder builder = new RAsyncVoidMethodBuilder();
             return builder;
         }
 

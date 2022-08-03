@@ -1,5 +1,4 @@
 # RTask
-Expand some function from ETTask
 
 ## A simple efficient mainThread allocation free async/await integration for Unity.
 
